@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML : Canvas</title>
+</head>
+<body>
+<h1>Canvas</h1>
+
+<pre>
+✅ What is &lt;canvas> in HTML5?
+The &lt;canvas> element is used to draw graphics, animations, or games on a web page using JavaScript.
+
+It creates a blank rectangular area where you can draw shapes, lines, images, and text.
+
+By default, it's empty—you must use JavaScript to draw on it.
+
+🧠 Why Use Canvas?
+Feature	Description
+🎨 Custom Graphics	Draw shapes, lines, and curves
+🎮 Games & Animations	Ideal for HTML5-based games
+📷 Image Manipulation	Load and edit images
+📊 Dynamic Charts	Use libraries (like Chart.js) to show charts
+🚀 Fast Performance	Uses pixel-based drawing, good for performance
+
+✅ How to Use &lt;canvas> in HTML5
+1️⃣ HTML Part – Define the Canvas Area
+html
+Copy
+Edit
+
+&lt;canvas id="myCanvas" width="300" height="150" style="border:1px solid black;">
+  Your browser does not support the canvas element.
+&lt;/canvas>
+
+2️⃣ JavaScript Part – Draw on Canvas
+html
+Copy
+Edit
+
+&lt;script>
+  const canva = document.getElementById("myCanvas");
+  const ctx = canva.getContext("2d");
+
+  // Draw a red rectangle
+  ctx.fillStyle = "red";
+  ctx.fillRect(20, 20, 100, 50);
+&lt;/script>
+✅ Full Example: Canvas Rectangle and Circle
+html
+Copy
+Edit
+
+
+  <canvas id="myCanvas" width="300" height="200" style="border:1px solid black;"></canvas>
+
+✍️ Common Canvas Drawing Methods:
+Method	Description
+fillRect(x, y, w, h)	Draw filled rectangle
+strokeRect(x, y, w, h)	Draw outlined rectangle
+clearRect(x, y, w, h)	Clear rectangle area
+beginPath()	Start a new shape
+arc(x, y, r, sAngle, eAngle)	Draw circle/arc
+moveTo(x, y)	Move pen to start position
+lineTo(x, y)	Draw line
+fillText(text, x, y)	Draw filled text
+drawImage(img, x, y)	Draw image
+
+🎨 Difference: SVG vs Canvas
+Feature	SVG	Canvas
+Type	Vector-based	Pixel-based
+Quality	Scales without losing quality	Can blur when scaled
+Performance	Slower with many objects	Faster for real-time graphics
+Scripting	Not required to draw	JavaScript required
+Use Case	Icons, logos, diagrams	Games, animations, real-time charts
+</pre>
+
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Draw rectangle
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 50, 120, 60);
+
+    // Draw circle
+    ctx.beginPath();
+    ctx.arc(200, 100, 30, 0, 2 * Math.PI);
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.stroke();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML : Forms</title>
+</head>
+<body>
+    <!-- Learning About forms. -->
+    <h1>Apply for Voting Card</h1>
+    <form action="post">
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+        <label for="mobile">Contact Number : </label>
+        <input type="tel" id="mobile" name="ContactNo" placeholder="Enter your mobile number"><br><br>
+        <label for="Gender">Gender : </label>
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Male" value="Male">
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" id="Female" value="Female"><br><br>
+
+        <input type="checkbox" id="agree" name="conditions" value="yes">
+        <label for="agree">Are you agree with terms and conditions</label><br><br>
+
+        <select name="college" id="clgname">
+            <option value="select">Select College</option>
+            <option value="Modern">Modern</option>
+            <option value="Garware">Garware</option>
+            <option value="Fergusion">Fergusion</option>
+            <option value="MIT">MIT</option>
+            <option value="SPPU">SPPU</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>

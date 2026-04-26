@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML : Stucture of HTML4 & HTML5 </title>
+</head>
+
+<body>
+    <h1>HTML4 Structure</h1>
+    <pre>
+    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    &lt;html>
+    &lt;head>
+        &lt;title>HTML4 Page</title>
+    &lt;/head>
+    &lt;body>
+        &lt;h1>Welcome</h1>
+        &lt;p>This is HTML4.</p>
+    &lt;/body>
+    &lt;/html>
+    </pre>
+    <pre>
+        🔹 Features:
+            Long, complex &lt;!DOCTYPE> declaration
+            No semantic tags like &lt;>, &lt;article>
+            Layout often done using &lt;table> or &lt;div>
+            Multimedia via plugins (Flash, etc.)
+    </pre>
+    <h1>HTML5 Structure</h1>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head>
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Document&lt;/title&gt;
+
+            //Meta content goes here which won't be displayed on the page.
+            
+        &lt;/head&gt;
+        &lt;body&gt;
+
+            //Visible content goes here.
+
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+         Features:
+            Simple &lt;!DOCTYPE html>
+            Supports semantic elements: &lt;header>, &lt;footer>, &lt;article>, &lt;nav>, etc.
+            Native support for audio, video, canvas
+            Mobile-friendly and faster loading
+    </pre>
+
+    <h2>Difference</h2>
+    <pre>
+
+    | Feature                         | HTML4                       | HTML5                                   |
+| --------------------------- | --------------------------- | ----------------------------------------------- |
+| Doctype Declaration         | Long and complex            | Simple: `&lt;!DOCTYPE html>`                    |
+| Semantic Tags               | Not available               | Available (e.g., `&lt;header>`, `&lt;section>`) |
+| Multimedia Support          | Needs plugins (Flash, etc.) | Built-in tags: `&lt;audio>`, `&lt;video>`       |
+| Form Controls               | Basic input types           | New types like `email`, `date`, `range`         |
+| Graphics Support            | Not supported natively      | `&lt;canvas>` and `&lt;svg>` supported          |
+| Browser Support for Offline | Not available               | Supports offline caching via Web Storage        |
+| Mobile-Friendly             | Not optimized               | Responsive design features                      |
+| APIs Support                | No support                  | Supports APIs (Geolocation, Drag & Drop)        |
+</pre>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML : SVG</title>
+</head>
+<body>
+    <h1>SVG</h1>
+    <pre>
+✅ What is SVG?
+SVG stands for Scalable Vector Graphics.
+It is an XML-based format for creating vector images directly in HTML.
+
+Unlike normal images (like .jpg or .png), SVG images do not lose quality when zoomed or resized.
+
+🧠 Why Use SVG?
+Feature	Description
+1. Scalable	No loss of quality on zoom.
+2. Editable with Code	You can create and control it with HTML, CSS, and JavaScript.
+3. Small File Size	Ideal for logos, icons, and simple graphics.
+4. Interactive	Supports animation, styling, and events.
+5. SEO Friendly	Text in SVG is selectable and searchable.
+
+✅ How to Use SVG in HTML
+🔹 Method 1: Inline SVG (Recommended for full control)
+html
+Copy
+Edit
+
+🔹 Method 2: Image Tag (Use an external .svg file)
+html
+Copy
+Edit
+<img src="logo.svg" alt="My Logo" width="200" />
+🔹 Method 3: As Background in CSS
+css
+Copy
+Edit
+div {
+  background-image: url('shape.svg');
+}
+✅ Example: Inline SVG Circle and Text
+html
+Copy
+Edit
+
+  <h2>SVG Circle Example</h2>
+  <svg width="200" height="200">
+    <circle cx="100" cy="100" r="80" fill="orange" stroke="black" stroke-width="4" />
+    <text x="100" y="105" font-size="20" text-anchor="middle" fill="white">SVG</text>
+  </svg>
+
+✍️ Basic SVG Elements You Can Use:
+Tag	Use
+&lt;circle>	Draws a circle
+&lt;rect>	Draws a rectangle
+&lt;line>	Draws a line
+&lt;polygon>	Draws a shape with multiple sides
+&lt;text>	Adds text
+&lt;path>	Draws complex shapes/curves
+
+</pre>
+</body>
+</html>

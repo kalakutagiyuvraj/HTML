@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML : Sementic Tags</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== HEADER ===== */
+header{
+    background-color: #1e293b;
+    padding: 15px 30px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li{
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li:hover{
+    color: #38bdf8;
+}
+
+/* ===== MAIN LAYOUT ===== */
+body{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+}
+
+/* Assign grid areas */
+header{ grid-area: header; }
+main{ grid-area: main; }
+aside{ grid-area: aside; }
+footer{ grid-area: footer; }
+
+/* ===== MAIN CONTENT ===== */
+main{
+    padding: 20px;
+    background-color: #f1f5f9;
+}
+
+article{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+figure{
+    background-color: #cbd5f5;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+section{
+    background-color: #e2e8f0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ===== ASIDE ===== */
+aside{
+    background-color: #facc15;
+    padding: 20px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+    </style>
+
+</head>
+<body>
+    <!-- What are the sementic tags ? -->
+    <!-- Sementic tags are HTML5 elements which describes clearly their meaning and stucture the content for the SEO and humans easy understanding. -->
+    <!-- Eg : header, footer main, section, aside, nav, figure, article, p etc -->
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        Here our main starts
+        <article>
+            Here our article starts
+            <figure>Figure</figure>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+          <section>This is section</section>     
+    </main>
+    <aside>This is the aside part</aside>
+    <footer>
+        This is footer
+    </footer>
+</body>
+</html>

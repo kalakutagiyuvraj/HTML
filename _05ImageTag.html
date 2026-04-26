@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML : Image tag & Attributes</title>
+</head>
+
+<body>
+    <h1>Image Tag & Its Attributes</h1>
+    <pre>
+    <img src="images/img1.jpg" alt="image1" width="300">
+
+    This line uses the HTML &lt;img> tag to display an image on a web page. Here’s a breakdown of each attribute:
+
+    src="images/img1.jpg": Specifies the path to the image file. In this case, it looks for img1.jpg inside the images
+    folder relative to the HTML file.
+    alt="image1": Provides alternative text that describes the image. This text is shown if the image fails to load and
+    is also used by screen readers for accessibility.
+    width="300": Sets the displayed width of the image to 300 pixels. The browser will scale the image to this width.
+
+    If the image path is incorrect, the browser will show the alt text instead.
+    Setting only the width (without height) keeps the image’s aspect ratio, but if you set both, the image may appear
+    stretched.
+    Example: This tag will show a 300-pixel wide image called img1.jpg and display "image1" if the image can’t be
+    loaded.
+
+    <img src="images/img2.jpg" alt="image2" height="300">
+    
+    height="300": Sets the displayed height of the image to 300 pixels. The browser will scale the image to this height.
+   </pre>
+   <pre>
+
+    <strong>List of Attributes : </strong>
+    1. height: Specifies the height of the image in pixels or percentage.
+    2. width: Specifies the width of the image in pixels or percentage.
+    3. alt: Provides alternative text for the image, if the image cannot be displayed.
+    4. src : Specifies the path to the image file.
+    5. title: Provides additional information about the image, displayed as a tooltip when hovered over.
+    6. id: unique identifier for the image.
+    7. class: Assign the css class to the image, may selects multiple elements.
+    8. style: Add inline CSS Styling.
+    9. usemap, crossrigin, refererpolicy, decoding, ismap, loading
+   </pre>
+
+   <pre>
+    <img src="images/img3.jpg" alt="image3" height="250" title="This is 3rd Museum">
+    <img src="images/img4.jpg" alt="image4" loading="lazy" height="200">
+    
+    <!-- This HTML <img> tag displays an image (img4.jpg) with a height of 200 pixels,
+    uses "image4" as alternative text, and loads the image lazily to improve page performance -->
+   </pre>
+
+</body>
+
+</html>
